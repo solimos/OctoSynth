@@ -1,0 +1,39 @@
+html, body {
+  background: linear-gradient(to top, #00003b 70%, #33003b 97%, #66003b);
+  color: #fff;
+  min-height: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 50%;
+  padding-top: 50%;
+  z-index: 1;
+}
+
+.octoSynth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 580px;
+  height: 580px;
+  margin: -290px 0 0 -290px;
+}
+
+.octopus path {
+  fill: url(#octoSkin);
+  stroke: rgba(19,255,237,1);
+}
+
+@media (min-width: 740px) {
+  .octopus path {
+    stroke-width: .4px;
+  }
+}
